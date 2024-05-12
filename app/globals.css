@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a:hover,
+  button:hover {
+    cursor: cell;
+  }
+
+  .heading span {
+    transition-delay: 0s;
+    cursor: cell;
+  }
+
+  .heading span:hover {
+    transition: color 0s;
+  }
+
+  .heading span:nth-child(1n):hover {
+    color: #b9d93c;
+  }
+
+  .heading span:nth-child(2n):hover {
+    color: #9da0f4;
+  }
+
+  .heading span:nth-child(3n):hover {
+    color: #62e5f1;
+  }
+  .heading span:nth-child(4n):hover {
+    color: #f2a7fa;
+  }
+}
+
+@layer components {
+  @media (max-width: 767px) {
+    #navigation {
+      @apply order-4;
+    }
+  }
+}
