@@ -9,6 +9,7 @@
   }
 
   .heading span {
+    transition: color 1s;
     transition-delay: 0s;
     cursor: cell;
   }
@@ -34,6 +35,50 @@
 }
 
 @layer components {
+  .btn-arrow .arrow-icon {
+    @apply inline-block translate-x-2.5;
+    transition: 0.3s ease-in-out;
+  }
+  .btn-arrow .arrow-icon--circle {
+    transition: 0.3s ease-in-out;
+    transform: translateX(0px);
+  }
+  .btn-arrow:hover .arrow-icon {
+    animation: arrowHover 1s;
+  }
+  .btn-arrow:hover .arrow-icon--circle {
+    animation: arrowHoverCircle 1s;
+  }
+
+  @keyframes arrowHover {
+    0% {
+      transform: translateX(10px);
+    }
+    30% {
+      transform: translateX(5px);
+    }
+    80% {
+      transform: translateX(15px);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+  @keyframes arrowHoverCircle {
+    0% {
+      transform: translateX(0px);
+    }
+    30% {
+      transform: translateX(-5px);
+    }
+    80% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
   @media (max-width: 767px) {
     #navigation {
       @apply order-4;
