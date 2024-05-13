@@ -1,9 +1,11 @@
 import Intro from "@/components/home/intro";
+import HomepageShowcase from "@/components/home/showcase";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main>
       <Intro />
+      <HomepageShowcase />
     </main>
   );
 }

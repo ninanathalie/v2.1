@@ -36,7 +36,7 @@ export default function SectionHeading({ children }: SectionHeadingProps) {
   }, []);
 
   return (
-    <span ref={headingRef} className={`${syne.className} heading`}>
+    <span ref={headingRef} className={`${syne.className} heading font-bold !important`}>
       {children}
     </span>
   );
