@@ -108,6 +108,18 @@
     @apply bg-[#f1feff99] dark:bg-[#f1feff0e];
   }
 
+  .input-subscribe {
+    @apply py-4 px-6 leading-tight bg-white placeholder-gray-300 border border-slate-900 dark:border-white dark:text-gray-200 dark:bg-slate-900/20 outline-none rounded-none shadow-none;
+  }
+
+  .btn-subscribe {
+    @apply absolute inset-y-0 right-0 flex items-center py-4 px-6 bg-[#DEF878] border border-slate-900 dark:border-white focus:outline-none uppercase hover:bg-[#ecffa2] text-xs md:text-sm rounded-none shadow-none;
+  }
+
+  .footer-social {
+    @apply hover:animate-bounce rounded-full h-10 w-10 md:h-12 md:w-12 flex items-center justify-center bg-white/30 dark:bg-white/10 border border-slate-900/5 dark:border-slate-100 dark:text-gray-200;
+  }
+
   @media (max-width: 767px) {
     #navigation {
       @apply order-4;

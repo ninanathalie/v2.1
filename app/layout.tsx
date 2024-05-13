@@ -5,6 +5,7 @@ import ThemeContextProvider from "@/context/theme-context";
 import { fontNexa } from "@/lib/local-font";
 import { motion } from "framer-motion";
 import Background from "@/components/ui/background";
+import Footer from "@/components/ui/footer";
 
 export const metadata: Metadata = {
   title: "Nathalie",
@@ -27,6 +28,7 @@ export default function RootLayout({
           <div className="md:my-4">
             <Header />
             {children}
+            <Footer />
           </div>
         </ThemeContextProvider>
       </body>

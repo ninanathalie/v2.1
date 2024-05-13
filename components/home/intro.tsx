@@ -15,7 +15,7 @@ export default function Intro() {
   return (
     <section className="flex justify-center">
       <div className="container pt-20 px-8 md:px-16 lg:px-14 xl:px-30 2xl:px-32 3xl:px-52 4xl:px-72">
-        <div className="nn-title border-b-2 border-white py-10 sm:py-16">
+        <motion.div className="nn-title border-b-2 border-white py-10 sm:py-16" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
           <div className="grid md:grid-cols-3 grid-rows-1">
             <div className="md:col-span-2">
               <motion.div className="featured-text relative sm:text-4xl text-3xl font-bold pb-2 md:pb-5" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
@@ -42,7 +42,7 @@ export default function Intro() {
               </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
