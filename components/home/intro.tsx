@@ -5,6 +5,7 @@ import SectionHeading from "@/components/ui/heading";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { motion } from "framer-motion";
+import Background from "../ui/background";
 
 export default function Intro() {
   const [typewriter] = useTypewriter({
@@ -19,9 +20,9 @@ export default function Intro() {
           <div className="grid md:grid-cols-3 grid-rows-1">
             <div className="md:col-span-2">
               <motion.div className="featured-text relative sm:text-4xl text-3xl font-bold pb-2 md:pb-5" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
-                <SectionHeading>Hello, I'm Niña Nathalie 👋🏼 </SectionHeading> <br />
-                <SectionHeading>I’m a Digital Product Designer and a</SectionHeading> <br />
-                <SectionHeading> Front-end Developer</SectionHeading>
+                <SectionHeading>Hello, I'm Niña Nathalie 👋🏼 </SectionHeading> <br className="break-web" />
+                <SectionHeading>I’m a Digital Product Designer</SectionHeading> <br className="break-web" />
+                <SectionHeading>and a Front-end Developer</SectionHeading>
               </motion.div>
 
               <motion.p className="text-justify md:text-left leading-relaxed xl:leading-7" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>

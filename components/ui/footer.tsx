@@ -4,12 +4,15 @@ import React from "react";
 import { BiLogoCodepen, BiLogoDribbble, BiLogoGithub, BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
 import SectionHeading from "./heading";
 import { motion } from "framer-motion";
+import Background from "./background";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex justify-center">
+    <footer className="flex justify-center relative">
+      <Background showBlobBottom={true} />
+
       <div className="container px-8 md:px-16 lg:px-14 xl:px-30 2xl:px-32 3xl:px-52 4xl:px-72">
         <motion.div className="nn-footer pt-20 sm:pt-16 pb-2 sm:pb-6 border-t-2 border-white" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
           <div className="md:flex items-center lg:-space-x-32 justify-center text-center">

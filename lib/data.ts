@@ -29,10 +29,10 @@ export const showcaseItems = [
     link: "/projects/case-studies/edenred-design-system/",
   },
   {
-    title: "Brands For Less Checkout Process Redesign & Optimization",
-    sub: "Simplifying the checkout process",
+    title: "Brands For Less Checkout Redesign & Optimization",
+    sub: "",
     description: "Due to its fast pace development and complicated checkout process, Brands For Less aims to simplify its complex delivery and payment method.",
-    tags: ["UX DESIGN", "COMPETITIVE STUDIES", "PROTOTYPING"],
+    tags: ["UX DESIGN", "PROTOTYPING"],
     imageUrl: csCheckoutRedesign,
     link: "/projects/case-studies/checkout-redesign/",
   },
