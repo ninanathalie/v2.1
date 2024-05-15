@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="flex justify-center relative">
       <Background showBlobBottom={true} />
 
-      <div className="container px-8 md:px-16 lg:px-14 xl:px-30 2xl:px-32 3xl:px-52 4xl:px-72">
+      <div className="container px-8 md:px-16 lg:px-14 xl:px-30 3xl:px-52 4xl:px-72">
         <motion.div className="nn-footer pt-20 sm:pt-16 pb-2 sm:pb-6 border-t-2 border-white" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
           <div className="md:flex items-center lg:-space-x-32 justify-center text-center">
             <div className="md:w-5/6 lg:w-4/6 3xl:w-3/6 4xl:w-3/6">
@@ -27,8 +27,8 @@ export default function Footer() {
                 <div className="w-full lg:w-5/6">
                   <div className="relative text-gray-700">
                     <form>
-                      <input type="email" value="" name="EMAIL" className="input-subscribe required email md:h-14 w-full h-13" placeholder="username@email.com" />
-                      <button type="submit" value="Subscribe" name="subscribe" className="md:h-14 h-13 btn-subscribe">
+                      <input type="email" defaultValue="" name="EMAIL" className="input-subscribe required email md:h-14 w-full h-13" placeholder="username@email.com" />
+                      <button type="submit" defaultValue="Subscribe" name="subscribe" className="md:h-14 h-13 btn-subscribe">
                         Stay Up To Date
                       </button>
                     </form>
@@ -73,9 +73,7 @@ export default function Footer() {
                   | All Rights Reserved &copy; {currentYear}
                 </small>{" "}
                 <br />
-                <small className="text-xs text-slate-500 dark:text-slate-400">
-                  Crafted with React & Next.js (App Router & Server Actions), Typescript, Tailwind CSS, Framer Motion, <br /> React Email, Resend API, and Vercel Hosting
-                </small>
+                <small className="text-xs text-slate-500 dark:text-slate-400">Crafted with React & Next.js (App Router & Server Actions), Typescript, Tailwind CSS, Framer Motion, React Email, Resend API, and Vercel Hosting</small>
               </motion.div>
             </div>
           </div>

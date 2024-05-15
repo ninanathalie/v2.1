@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function AboutMe() {
   return (
     <section className="flex justify-center">
-      <div className="container pt-20 px-8 md:px-16 lg:px-14 xl:px-30 2xl:px-32 3xl:px-52 4xl:px-72">
+      <div className="container pt-20 px-8 md:px-16 lg:px-14 xl:px-30 3xl:px-52 4xl:px-72">
         <div className="nn-title py-10 sm:py-16">
           <div className="float-right">
             <div className="flex items-center justify-center p-4">

@@ -12,7 +12,7 @@ export default function HomepageShowcase() {
     <section>
       <div className="pt-10 md:pt-16">
         <motion.div className="flex justify-center" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.175 }}>
-          <div className="container px-8 md:px-16 lg:px-14 xl:px-30 2xl:px-32 3xl:px-52 4xl:px-72 mb-12 xl:mb-16 3xl:mb-24">
+          <div className="container px-8 md:px-16 lg:px-14 xl:px-30 3xl:px-52 4xl:px-72 mb-12 xl:mb-16 3xl:mb-24">
             <h3 className="font-semibold tracking-tight lg:tracking-normal">Here’s some of the latest and greatest of my previous works:</h3>
           </div>
         </motion.div>
@@ -31,8 +31,8 @@ function Showcase({ title, sub, description, tags, imageUrl, link }: ShowcasePro
   return (
     <motion.div className="nn-featured" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.175 }}>
       <a href={link}>
-        <div className="xl:bg-featured-container px-0 flex w-full items-center justify-center mb-10 xl:mb-32 xl:h-[340px] 3xl:h-[380px] overflow-visible">
-          <div className="container xl:flex items-center xl:-space-x-32 px-8 md:px-16 lg:px-14 xl:px-30 2xl:px-32 3xl:px-52 4xl:px-72">
+        <div className="xl:bg-featured-container px-0 flex w-full items-center justify-center mb-10 xl:mb-32 2xl:mb-42 3xl:mb-48 xl:h-[340px] 3xl:h-[380px] overflow-visible">
+          <div className="container xl:flex items-center xl:-space-x-32 px-8 md:px-16 lg:px-14 xl:px-30 3xl:px-52 4xl:px-72">
             <div className="bg-featured-img flex items-center justify-center xl:w-5/6 w-full 3xl:h-[525px] lg:h-[425px] md:h-[320px] h-[250px] overflow-hidden">
               <motion.div className="relative w-full h-full" initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: "tween", duration: 0.3 }}>
                 <Image src={imageUrl} alt={title} quality={95} className="mx-auto xl:mx-0 object-cover" />

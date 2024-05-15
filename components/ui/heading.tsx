@@ -2,6 +2,7 @@
 
 import React, { ReactNode, useEffect, useRef } from "react";
 import { Syne } from "next/font/google";
+
 const syne = Syne({ subsets: ["latin"] });
 
 type SectionHeadingProps = {
@@ -16,7 +17,7 @@ type SectionHeadingProps = {
  * @param {ReactNode} children - The text content of the section heading.
  * @returns {JSX.Element} - A JSX element representing the styled section heading.
  */
-export default function SectionHeading({ children }: SectionHeadingProps) {
+export default function SectionHeading({ children }: SectionHeadingProps): JSX.Element {
   const headingRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {

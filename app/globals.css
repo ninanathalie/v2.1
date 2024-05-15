@@ -324,6 +324,29 @@
     }
   }
 
+  /* Projects - Case Study Images Hover */
+  .case-img {
+    @apply relative;
+  }
+
+  .case-img .top-left {
+    @apply absolute top-[8%] left-[6%] transition-[0.3s] ease-out;
+    transition-property: left, top;
+  }
+
+  .case-img img {
+    @apply transition-[0.3s] ease-out;
+    transition-property: left, top;
+  }
+
+  .case-img:hover img {
+    @apply opacity-[0.5];
+  }
+
+  .case-img:hover .top-left {
+    @apply top-[10%] left-[8%];
+  }
+
   /* Footer */
   .input-subscribe {
     @apply py-4 px-6 leading-tight bg-white placeholder-gray-300 border border-slate-900 dark:border-white dark:text-gray-200 dark:bg-slate-900/20 outline-none rounded-none shadow-none;

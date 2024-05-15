@@ -9,7 +9,7 @@ export default function KeySkills() {
     <section className="flex justify-center relative">
       <Background showBlobXY={true} />
 
-      <div className="container px-8 md:px-16 lg:px-14 xl:px-30 2xl:px-32 3xl:px-52 4xl:px-72 mb-6">
+      <div className="container px-8 md:px-16 lg:px-14 xl:px-30 3xl:px-52 4xl:px-72 mb-6">
         <div className="pt-6 py-16 border-b-2 border-white">
           <div className="nn-title grid grid-rows-1 mb-10">
             <h1 className="sm:text-4xl text-3xl font-medium">
@@ -64,7 +64,7 @@ export default function KeySkills() {
                 <div>
                   <span className="block">
                     <svg className="group-hover:animate-wiggle mx-auto mb-6" width="85" height="78" viewBox="0 0 85 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_706_1277)">
+                      <g clipPath="url(#clip0_706_1277)">
                         <path d="M59.2513 77.685H35.0387V69.6385H37.8915V74.8322H56.4716V69.6385H59.2513V77.685Z" className="fill-current" />
                         <path d="M64.006 74.8322H30.3571V77.685H64.006V74.8322Z" className="fill-current" />
                         <path
@@ -137,7 +137,7 @@ export default function KeySkills() {
                 <div>
                   <span className="block">
                     <svg className="group-hover:animate-wiggle mx-auto mb-6" width="77" height="81" viewBox="0 0 77 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_706_1221)">
+                      <g clipPath="url(#clip0_706_1221)">
                         <path d="M40.2578 6.61768H37.1558V9.30613H40.2578V6.61768Z" className="fill-current" />
                         <path d="M45.359 70.7959H32.1235V73.4844H45.359V70.7959Z" className="fill-current" />
                         <path
@@ -386,7 +386,7 @@ export default function KeySkills() {
                 <div className="pt-1 group">
                   <div className="flex items-center justify-between">
                     <div>
-                      <span className="text-xs font-medium tracking-wide inline-block py-1 uppercase"> Bootstrap 3 & 4 </span>
+                      <span className="text-xs font-medium tracking-wide inline-block py-1 uppercase"> Bootstrap </span>
                     </div>
                     <div className="text-right">
                       <span className="text-xs text-transparent font-semibold inline-block"> 80% </span>
@@ -480,26 +480,26 @@ export default function KeySkills() {
                     <span className="block">
                       <div className="hover:animate-bounce hover-switch inline-block relative">
                         <svg className="absolute -left-3 -top-3" width="85" height="95" viewBox="0 0 85 95" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0909 21.7876L42 20L58.9091 21.7876L71.9998 39.361L42 74.2954L12 39.361L25.0909 21.7876Z" fill="#FDB300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1514 39.361L42 74.2954L12 39.361H24.1514Z" fill="#EA6C00" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8485 39.361L42 74.2954L71.9998 39.361H59.8485Z" fill="#EA6C00" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1514 39.361H59.8485L42 74.2954L24.1514 39.361Z" fill="#FDAD00" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M42 20L25.0907 21.7876L24.1514 39.361L42 20Z" fill="#FDD231" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M42 20L58.9091 21.7876L59.8485 39.361L42 20Z" fill="#FDD231" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M72 39.3609L58.9089 21.7875L59.8484 39.3609H72Z" fill="#FDAD00" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 39.3609L25.0907 21.7875L24.1514 39.3609H12Z" fill="#FDAD00" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M42 20L24.1514 39.361H59.8485L42 20Z" fill="#FEEEB7" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M25.0909 21.7876L42 20L58.9091 21.7876L71.9998 39.361L42 74.2954L12 39.361L25.0909 21.7876Z" fill="#FDB300" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M24.1514 39.361L42 74.2954L12 39.361H24.1514Z" fill="#EA6C00" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M59.8485 39.361L42 74.2954L71.9998 39.361H59.8485Z" fill="#EA6C00" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M24.1514 39.361H59.8485L42 74.2954L24.1514 39.361Z" fill="#FDAD00" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M42 20L25.0907 21.7876L24.1514 39.361L42 20Z" fill="#FDD231" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M42 20L58.9091 21.7876L59.8485 39.361L42 20Z" fill="#FDD231" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M72 39.3609L58.9089 21.7875L59.8484 39.3609H72Z" fill="#FDAD00" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M12 39.3609L25.0907 21.7875L24.1514 39.3609H12Z" fill="#FDAD00" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M42 20L24.1514 39.361H59.8485L42 20Z" fill="#FEEEB7" />
                         </svg>
                         <svg className="absolute -left-3 -top-3" width="85" height="95" viewBox="0 0 85 95" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0909 21.7876L42 20L58.9091 21.7876L71.9998 39.361L42 74.2954L12 39.361L25.0909 21.7876Z" fill="#4D4D4D" className="fill-current dark:text-gray-400" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1514 39.361L42 74.2954L12 39.361H24.1514Z" className="fill-current text-primary-color dark:text-gray-400" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M59.8485 39.361L42 74.2954L71.9998 39.361H59.8485Z" className="fill-current text-primary-color dark:text-gray-400" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1514 39.361H59.8485L42 74.2954L24.1514 39.361Z" fill="#6B6B6B" className="fill-current text-gray-600 dark:text-gray-300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M42 20L25.0907 21.7876L24.1514 39.361L42 20Z" fill="#6C6C6C" className="fill-current text-gray-500 dark:text-gray-300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M42 20L58.9091 21.7876L59.8485 39.361L42 20Z" fill="#6C6C6C" className="fill-current text-gray-500 dark:text-gray-300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M72 39.3609L58.9089 21.7875L59.8484 39.3609H72Z" fill="#7D7D7D" className="fill-current text-gray-400 dark:text-gray-200" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 39.3609L25.0907 21.7875L24.1514 39.3609H12Z" fill="#7D7D7D" className="fill-current text-gray-400 dark:text-gray-200" />
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M42 20L24.1514 39.361H59.8485L42 20Z" fill="#949494" className="fill-current text-gray-400 dark:text-gray-50" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M25.0909 21.7876L42 20L58.9091 21.7876L71.9998 39.361L42 74.2954L12 39.361L25.0909 21.7876Z" fill="#4D4D4D" className="fill-current dark:text-gray-400" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M24.1514 39.361L42 74.2954L12 39.361H24.1514Z" className="fill-current text-primary-color dark:text-gray-400" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M59.8485 39.361L42 74.2954L71.9998 39.361H59.8485Z" className="fill-current text-primary-color dark:text-gray-400" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M24.1514 39.361H59.8485L42 74.2954L24.1514 39.361Z" fill="#6B6B6B" className="fill-current text-gray-600 dark:text-gray-300" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M42 20L25.0907 21.7876L24.1514 39.361L42 20Z" fill="#6C6C6C" className="fill-current text-gray-500 dark:text-gray-300" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M42 20L58.9091 21.7876L59.8485 39.361L42 20Z" fill="#6C6C6C" className="fill-current text-gray-500 dark:text-gray-300" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M72 39.3609L58.9089 21.7875L59.8484 39.3609H72Z" fill="#7D7D7D" className="fill-current text-gray-400 dark:text-gray-200" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M12 39.3609L25.0907 21.7875L24.1514 39.3609H12Z" fill="#7D7D7D" className="fill-current text-gray-400 dark:text-gray-200" />
+                          <path fillRule="evenodd" clipRule="evenodd" d="M42 20L24.1514 39.361H59.8485L42 20Z" fill="#949494" className="fill-current text-gray-400 dark:text-gray-50" />
                         </svg>
                       </div>
                     </span>
@@ -514,8 +514,8 @@ export default function KeySkills() {
                       <div className="hover:animate-bounce hover-switch inline-block relative">
                         <svg className="absolute -left-3 -top-3" width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M67.5609 12H18.4391C15.4352 12 13 14.4352 13 17.4391V66.5609C13 69.5648 15.4352 72 18.4391 72H67.5609C70.5648 72 73 69.5648 73 66.5609V17.4391C73 14.4352 70.5648 12 67.5609 12ZM33.052 30.8777C35.0466 30.8777 36.7173 29.3143 36.7173 27.2655C36.7173 25.218 35.0466 23.655 33.052 23.655C31.0575 23.655 29.387 25.218 29.387 27.2655C29.387 29.3143 31.0575 30.8777 33.052 30.8777ZM25.452 50.2184C25.2368 51.1348 25.1286 52.1243 25.1286 52.9316C25.1286 56.1123 26.8534 58.2239 30.5189 58.2239C33.5589 58.2239 36.0232 56.4184 37.7975 53.5036L36.7141 57.8521H42.7505L46.2005 44.0148C47.0627 40.5111 48.7336 38.6927 51.2673 38.6927C53.2616 38.6927 54.5014 39.933 54.5014 41.9805C54.5014 42.5739 54.4473 43.22 54.2318 43.9209L52.4527 50.2811C52.1832 51.1975 52.0759 52.1146 52.0759 52.9761C52.0759 55.9957 53.8543 58.2043 57.5734 58.2043C60.7536 58.2043 63.2868 56.1571 64.6884 51.2518L62.317 50.3361C61.1309 53.6225 60.1068 54.2166 59.2984 54.2166C58.4898 54.2166 58.0584 53.678 58.0584 52.6005C58.0584 52.1155 58.1666 51.5771 58.328 50.9289L60.0532 44.7323C60.4841 43.2773 60.6461 41.987 60.6461 40.8016C60.6461 36.1661 57.843 33.7471 54.4473 33.7471C51.2673 33.7471 48.033 36.6155 46.4164 39.6343L47.6018 34.2157H38.385L37.0911 38.9884H41.4034L38.7482 49.6198C36.6627 54.2552 32.8323 54.3304 32.3516 54.2227C31.5623 54.0448 31.0575 53.745 31.0575 52.7193C31.0575 52.1275 31.1652 51.2775 31.4348 50.2525L35.4777 34.2157H25.2368L23.943 38.9884H28.2009L25.452 50.2184Z"
                             fill="#FF2A63"
                           />
@@ -523,8 +523,8 @@ export default function KeySkills() {
 
                         <svg className="absolute -left-3 -top-3" width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M67.5609 12H18.4391C15.4352 12 13 14.4352 13 17.4391V66.5609C13 69.5648 15.4352 72 18.4391 72H67.5609C70.5648 72 73 69.5648 73 66.5609V17.4391C73 14.4352 70.5648 12 67.5609 12ZM33.052 30.8777C35.0466 30.8777 36.7173 29.3143 36.7173 27.2655C36.7173 25.218 35.0466 23.655 33.052 23.655C31.0575 23.655 29.387 25.218 29.387 27.2655C29.387 29.3143 31.0575 30.8777 33.052 30.8777ZM25.452 50.2184C25.2368 51.1348 25.1286 52.1243 25.1286 52.9316C25.1286 56.1123 26.8534 58.2239 30.5189 58.2239C33.5589 58.2239 36.0232 56.4184 37.7975 53.5036L36.7141 57.8521H42.7505L46.2005 44.0148C47.0627 40.5111 48.7336 38.6927 51.2673 38.6927C53.2616 38.6927 54.5014 39.933 54.5014 41.9805C54.5014 42.5739 54.4473 43.22 54.2318 43.9209L52.4527 50.2811C52.1832 51.1975 52.0759 52.1146 52.0759 52.9761C52.0759 55.9957 53.8543 58.2043 57.5734 58.2043C60.7536 58.2043 63.2868 56.1571 64.6884 51.2518L62.317 50.3361C61.1309 53.6225 60.1068 54.2166 59.2984 54.2166C58.4898 54.2166 58.0584 53.678 58.0584 52.6005C58.0584 52.1155 58.1666 51.5771 58.328 50.9289L60.0532 44.7323C60.4841 43.2773 60.6461 41.987 60.6461 40.8016C60.6461 36.1661 57.843 33.7471 54.4473 33.7471C51.2673 33.7471 48.033 36.6155 46.4164 39.6343L47.6018 34.2157H38.385L37.0911 38.9884H41.4034L38.7482 49.6198C36.6627 54.2552 32.8323 54.3304 32.3516 54.2227C31.5623 54.0448 31.0575 53.745 31.0575 52.7193C31.0575 52.1275 31.1652 51.2775 31.4348 50.2525L35.4777 34.2157H25.2368L23.943 38.9884H28.2009L25.452 50.2184Z"
                             className="fill-current"
                           />
@@ -614,16 +614,16 @@ export default function KeySkills() {
                       <div className="hover:animate-bounce hover-switch inline-block relative">
                         <svg className="absolute -left-3 -top-3" width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M43 18C32.3333 18 25.6667 23.3333 23 34C27 28.6667 31.6667 26.6667 37 28C40.043 28.76 42.2178 30.9689 44.6252 33.4119C48.5467 37.3926 53.0859 42 63 42C73.6667 42 80.3333 36.6667 83 26C79 31.3333 74.3333 33.3333 69 32C65.957 31.24 63.7822 29.0311 61.3748 26.5881C57.4533 22.6074 52.9141 18 43 18ZM23 42C12.3333 42 5.66667 47.3333 3 58C7 52.6667 11.6667 50.6667 17 52C20.043 52.7615 22.2178 54.9689 24.6252 57.4118C28.5467 61.3926 33.0859 66 43 66C53.6667 66 60.3333 60.6667 63 50C59 55.3333 54.3333 57.3333 49 56C45.957 55.24 43.7822 53.0311 41.3748 50.5881C37.4533 46.6074 32.9141 42 23 42Z"
                             fill="#06B6D4"
                           />
                         </svg>
                         <svg className="absolute -left-3 -top-3" width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M43 18C32.3333 18 25.6667 23.3333 23 34C27 28.6667 31.6667 26.6667 37 28C40.043 28.76 42.2178 30.9689 44.6252 33.4119C48.5467 37.3926 53.0859 42 63 42C73.6667 42 80.3333 36.6667 83 26C79 31.3333 74.3333 33.3333 69 32C65.957 31.24 63.7822 29.0311 61.3748 26.5881C57.4533 22.6074 52.9141 18 43 18ZM23 42C12.3333 42 5.66667 47.3333 3 58C7 52.6667 11.6667 50.6667 17 52C20.043 52.7615 22.2178 54.9689 24.6252 57.4118C28.5467 61.3926 33.0859 66 43 66C53.6667 66 60.3333 60.6667 63 50C59 55.3333 54.3333 57.3333 49 56C45.957 55.24 43.7822 53.0311 41.3748 50.5881C37.4533 46.6074 32.9141 42 23 42Z"
                             className="fill-current"
                           />
@@ -664,16 +664,16 @@ export default function KeySkills() {
                       <div className="hover:animate-bounce hover-switch inline-block relative">
                         <svg className="absolute -top-3" width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M13 41.9991C13 37.6489 13.9338 33.52 15.597 29.7905L29.9074 68.998C19.9002 64.136 13 53.8738 13 41.9991ZM63.2519 40.4859C63.2519 43.0528 62.2638 46.0324 60.97 50.1837L57.9755 60.1815L47.1339 27.9343C48.9396 27.8387 50.5672 27.6474 50.5672 27.6474C52.1835 27.4581 51.9941 25.0803 50.3759 25.176C50.3759 25.176 45.5176 25.5567 42.3807 25.5567C39.4331 25.5567 34.4792 25.176 34.4792 25.176C32.861 25.0803 32.6716 27.5518 34.2879 27.6474C34.2879 27.6474 35.8198 27.8387 37.4361 27.9343L42.1088 40.739L35.5423 60.429L24.6182 27.9343C26.4258 27.8387 28.0515 27.6474 28.0515 27.6474C29.6678 27.4581 29.4765 25.0803 27.8602 25.176C27.8602 25.176 23.0019 25.5567 19.865 25.5567C19.3024 25.5567 18.6387 25.5436 17.9337 25.5211C23.2982 17.3777 32.5179 12 42.9994 12C50.8091 12 57.9212 14.9851 63.2576 19.8752C63.1282 19.8677 63.0026 19.8508 62.8694 19.8508C59.9218 19.8508 57.8311 22.4178 57.8311 25.176C57.8311 27.6473 59.2581 29.74 60.7787 32.2132C61.9188 34.2101 63.2519 36.777 63.2519 40.4859ZM69.3249 27.6067C71.6668 31.8799 73 36.7833 73 41.9997C73 53.0663 67.0017 62.7303 58.082 67.9299L67.2455 41.4371C68.9574 37.1563 69.5274 33.7343 69.5274 30.6911C69.5274 29.5867 69.4543 28.563 69.3249 27.6067ZM43.5263 44.6234L52.7479 69.8879C52.8079 70.036 52.8829 70.1711 52.9616 70.3005C49.8434 71.3974 46.4927 72.0011 42.9994 72.0011C40.0556 72.0011 37.213 71.5698 34.5242 70.7785L43.5263 44.6234Z"
                             fill="#00759D"
                           />
                         </svg>
                         <svg className="absolute -top-3" width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M13 41.9991C13 37.6489 13.9338 33.52 15.597 29.7905L29.9074 68.998C19.9002 64.136 13 53.8738 13 41.9991ZM63.2519 40.4859C63.2519 43.0528 62.2638 46.0324 60.97 50.1837L57.9755 60.1815L47.1339 27.9343C48.9396 27.8387 50.5672 27.6474 50.5672 27.6474C52.1835 27.4581 51.9941 25.0803 50.3759 25.176C50.3759 25.176 45.5176 25.5567 42.3807 25.5567C39.4331 25.5567 34.4792 25.176 34.4792 25.176C32.861 25.0803 32.6716 27.5518 34.2879 27.6474C34.2879 27.6474 35.8198 27.8387 37.4361 27.9343L42.1088 40.739L35.5423 60.429L24.6182 27.9343C26.4258 27.8387 28.0515 27.6474 28.0515 27.6474C29.6678 27.4581 29.4765 25.0803 27.8602 25.176C27.8602 25.176 23.0019 25.5567 19.865 25.5567C19.3024 25.5567 18.6387 25.5436 17.9337 25.5211C23.2982 17.3777 32.5179 12 42.9994 12C50.8091 12 57.9212 14.9851 63.2576 19.8752C63.1282 19.8677 63.0026 19.8508 62.8694 19.8508C59.9218 19.8508 57.8311 22.4178 57.8311 25.176C57.8311 27.6473 59.2581 29.74 60.7787 32.2132C61.9188 34.2101 63.2519 36.777 63.2519 40.4859ZM69.3249 27.6067C71.6668 31.8799 73 36.7833 73 41.9997C73 53.0663 67.0017 62.7303 58.082 67.9299L67.2455 41.4371C68.9574 37.1563 69.5274 33.7343 69.5274 30.6911C69.5274 29.5867 69.4543 28.563 69.3249 27.6067ZM43.5263 44.6234L52.7479 69.8879C52.8079 70.036 52.8829 70.1711 52.9616 70.3005C49.8434 71.3974 46.4927 72.0011 42.9994 72.0011C40.0556 72.0011 37.213 71.5698 34.5242 70.7785L43.5263 44.6234Z"
                             className="fill-current"
                           />

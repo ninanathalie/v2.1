@@ -1,7 +1,8 @@
-import React from "react";
 import csVisualSearch from "@/public/home/visual-search.png";
 import csDesignSystem from "@/public/home/design-system.png";
 import csCheckoutRedesign from "@/public/home/checkout-redesign.png";
+import roasAppImg from "@/public/projects/roas-app.png";
+import roasThemeImg from "@/public/projects/roas-shopify-theme.png";
 
 export const headerLinks = [
   { text: "Home", href: "/" },
@@ -37,3 +38,20 @@ export const showcaseItems = [
     link: "/projects/case-studies/checkout-redesign/",
   },
 ];
+
+export const projectsData = [
+  {
+    title: "ROAS Shopify Theme",
+    description: "We built, improve and maintain our internal Shopify theme, tailored specifically for ROAS Agency featuring custom design elements and functionalities",
+    tags: ["Shopify Liquid", "Javascript", "CSS", "Bootstrap"],
+    imageUrl: roasThemeImg,
+  },
+  {
+    title: "ROAS App",
+    description: "We also built a Web App, I contributed to designing the MVP, crafted with ShadCN Design System and library to build the UI. We also utilized Cypress for test automation",
+    tags: ["React", "Next.js", "Typescript", "Tailwind", "ShadCN", "Cypress"],
+    imageUrl: roasAppImg,
+  },
+] as const;
+
+export const otherProjectsData = ["www.spikespree.com", "www.gleechoices.com", "www.dailysnags.com", "www.saywegood.com", "www.pnosailingacademy.com", "www.transgulf.ae"];

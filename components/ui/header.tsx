@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header className={`top-nav fixed inset-x-0 z-10 ${isScrolling ? "bg-white transition-none shadow-lg shadow-slate-200/20 dark:bg-slate-900/90 dark:shadow-slate-600/10" : ""}`}>
       <div className="top-nav flex justify-center">
-        <motion.nav className={`container bg-transparent px-8 md:px-16 lg:px-14 xl:px-30 2xl:px-32 3xl:px-52 4xl:px-72 origin-top ${isNavOpen ? "bg-white dark:bg-slate-900" : ""}`} initial={{ y: -100, x: "0%", opacity: 0 }} animate={{ y: 0, x: "0%", opacity: 1 }}>
+        <motion.nav className={`container bg-transparent px-8 md:px-16 lg:px-14 xl:px-30 3xl:px-52 4xl:px-72 origin-top ${isNavOpen ? "bg-white dark:bg-slate-900" : ""}`} initial={{ y: -100, x: "0%", opacity: 0 }} animate={{ y: 0, x: "0%", opacity: 1 }}>
           <div className={`flex items-center md:justify-between flex-wrap py-4 ${isScrolling ? "border-none" : "border-b-2 border-white"} ${isNavOpen ? "border-none" : ""} `}>
             <a href="/" className="nn-logo infline-flex md:hidden">
               <Logo height={40} />
