@@ -1,13 +1,13 @@
-import React from "react";
 import Image from "next/image";
 import SectionHeading from "@/components/ui/heading";
 import { motion } from "framer-motion";
+import Marquee from "react-fast-marquee";
 
 export default function AboutMe() {
   return (
     <section className="flex justify-center">
       <div className="container pt-20 px-8 md:px-16 lg:px-14 xl:px-30 3xl:px-52 4xl:px-72">
-        <div className="nn-title py-10 sm:py-16">
+        <div className="py-10 sm:py-16">
           <div className="float-right">
             <div className="flex items-center justify-center p-4">
               <div className="relative">
@@ -39,6 +39,13 @@ export default function AboutMe() {
           <p className="font-normal text-justify leading-relaxed xl:leading-7 mb-2">
             When I'm not coding, I enjoy reading articles on Medium, writing on my personal blog, or going to the gym. I also love learning new things, although that often means being in front of my computer once again ^.^
           </p>
+        </div>
+        <div style={{ minWidth: "100%", maxWidth: "max-content" }}>
+          <Marquee pauseOnHover loop={0} speed={110}>
+            <div className="marquee-inner stroke stroke-1 stroke-current font-extrabold text-primary-color dark:text-white">
+              <span>6+ YEARS IN THE GAME</span>
+            </div>
+          </Marquee>
         </div>
       </div>
     </section>

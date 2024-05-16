@@ -2,23 +2,9 @@ import React, { useRef } from "react";
 
 import SectionHeading from "@/components/ui/heading";
 import { otherProjectsData, projectsData } from "@/lib/data";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { RiArrowRightUpLine } from "react-icons/ri";
-
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
+import Marquee from "react-fast-marquee";
 
 export default function DevelopmentProjects() {
   return (
@@ -56,15 +42,17 @@ export default function DevelopmentProjects() {
               <p className="font-thin text-md md:text-lg mb-2 text-slate-500">Here's a selection of front-end projects that I've also worked on in the past:</p>
             </div>
             <div className="marquee-projects gap-2" style={{ minWidth: "100%", maxWidth: "max-content" }}>
-              <ul className="flex gap-2 text-md text-slate-600">
-                {otherProjectsData.map((links, index) => (
-                  <li className="bg-white rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:border dark:border-black/[0.1] " key={index}>
-                    <a href="#" className="group transition flex items-center font-bold underline underline-offset-4 hover:no-underline">
-                      {links} <RiArrowRightUpLine className="opactity-70 group-hover:translate-x-1 transition" />
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              <Marquee pauseOnHover loop={0} speed={60}>
+                <ul className="flex gap-2 text-md text-slate-600">
+                  {otherProjectsData.map((links, index) => (
+                    <li className="bg-white rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:border dark:border-black/[0.1] " key={index}>
+                      <a className="group transition flex items-center font-bold underline underline-offset-4 hover:no-underline">
+                        {links} <RiArrowRightUpLine className="opactity-70 group-hover:translate-x-1 transition" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </Marquee>
             </div>
           </div>
         </div>
