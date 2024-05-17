@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { ScrollAwareProps } from "@/lib/type";
 
@@ -57,8 +58,9 @@ export default function ScrollAware({ links }: ScrollAwareProps) {
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
                 }}
+                className={clsx({ active: activeSection === link.name })}
               >
-                <span>{link.name}</span>
+                <span className={clsx({ active: activeSection === link.name })}>{link.name}</span>
               </Link>
             </motion.li>
           ))}
