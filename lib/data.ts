@@ -9,7 +9,7 @@ export const headerLinks = [
   { text: "About Me", href: "/about/" },
   { text: "Works", href: "/projects/" },
   { text: "Resume", href: "#" },
-  { text: "Contact", href: "mailto:mninanathalie@gmail.com" },
+  { text: "Contact", href: "/contact/" },
 ];
 
 export const showcaseItems = [
