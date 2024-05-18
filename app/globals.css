@@ -194,4 +194,66 @@
       @apply order-4;
     }
   }
+
+  /* Case Study - Scroll Aware */
+  .case-study > div {
+    scroll-margin-top: 5.5rem;
+  }
+
+  .case-study > ol {
+    @apply fixed flex flex-col text-white z-[5] left-12 top-[50%] list-none;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 1100px) {
+    .case-study > ol {
+      @apply hidden;
+    }
+  }
+
+  .case-study > ol > li {
+    counter-increment: customlistcounter;
+  }
+
+  .case-study > ol > li > a {
+    @apply relative inline-block uppercase no-underline font-medium text-[10px] tracking-[0.6px] whitespace-nowrap h-6 leading-6 text-left duration-[0.2s] ease-linear;
+  }
+
+  .case-study > ol > li > a:before {
+    content: counter(customlistcounter);
+    @apply relative inline-block w-6 text-center bg-[#b9d53e];
+    height: inherit;
+    line-height: inherit;
+    transition-duration: inherit;
+    transition-timing-function: inherit;
+    transition-property: background-color;
+  }
+
+  .case-study > ol > li:hover > a:before,
+  .case-study > ol > li > a.active:before {
+    @apply bg-[#9da0f4] duration-[0.1s];
+  }
+
+  .case-study > ol > li:hover > a::before,
+  .case-study > ol > li > a.active::before {
+    background-color: #9da0f4;
+  }
+
+  .case-study > ol > li > a > span {
+    @apply relative inline-block py-0 px-2 bg-[#b9d53e];
+    height: inherit;
+    line-height: inherit;
+    transform: scaleX(0);
+    transform-origin: left top;
+    transition-property: background-color, transform;
+    transition-duration: inherit;
+    transition-timing-function: inherit;
+  }
+
+  .case-study > ol > li:hover > a > span,
+  .case-study > ol > li > a span.active {
+    transform: scaleX(1);
+    background-color: #9da0f4;
+    transition-duration: 0.1s;
+  }
 }

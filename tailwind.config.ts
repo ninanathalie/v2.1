@@ -42,7 +42,12 @@ const config: Config = {
       animation: ["hover", "focus", "group-hover"],
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }: any) {
+      addVariant("hover-span", "&:hover > span");
+      addVariant("active-span", "&.active > span");
+    },
+  ],
   darkMode: "class",
 };
 export default config;
