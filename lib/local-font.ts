@@ -3,43 +3,43 @@ import Nexa from "next/font/local";
 export const fontNexa = Nexa({
   src: [
     {
-      path: "../public/global/fonts/Nexa-Light.woff",
+      path: "../public/shared/fonts/Nexa-Light.woff",
       weight: "100",
       style: "normal",
     },
     {
-      path: "../public/global/fonts/Nexa-Book.woff",
+      path: "../public/shared/fonts/Nexa-Book.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../public/global/fonts/Nexa-Heavy.woff",
+      path: "../public/shared/fonts/Nexa-Heavy.woff",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../public/global/fonts/Nexa-Bold.woff",
+      path: "../public/shared/fonts/Nexa-Bold.woff",
       weight: "800",
       style: "normal",
     },
 
     {
-      path: "../public/global/fonts/Nexa-LightItalic.woff",
+      path: "../public/shared/fonts/Nexa-LightItalic.woff",
       weight: "100",
       style: "italic",
     },
     {
-      path: "../public/global/fonts/Nexa-BookItalic.woff",
+      path: "../public/shared/fonts/Nexa-BookItalic.woff",
       weight: "400",
       style: "italic",
     },
     {
-      path: "../public/global/fonts/Nexa-HeavyItalic.woff",
+      path: "../public/shared/fonts/Nexa-HeavyItalic.woff",
       weight: "600",
       style: "italic",
     },
     {
-      path: "../public/global/fonts/Nexa-BoldItalic.woff",
+      path: "../public/shared/fonts/Nexa-BoldItalic.woff",
       weight: "800",
       style: "italic",
     },

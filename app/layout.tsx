@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/ui/header";
+import Header from "@/components/shared/header";
 import ThemeContextProvider from "@/context/theme-context";
 import { fontNexa } from "@/lib/local-font";
 import { motion } from "framer-motion";
-import Background from "@/components/ui/background";
-import Footer from "@/components/ui/footer";
+import Background from "@/components/shared/background";
+import Footer from "@/components/shared/footer";
 
 export const metadata: Metadata = {
   title: "Nathalie",

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
 
@@ -7,10 +8,10 @@ export default function MarketingPages() {
   return (
     <section>
       <div className="container px-8 md:px-16 lg:px-14 xl:px-30 3xl:px-52 4xl:px-72 mb-6">
-        <div className="nn-title grid grid-rows-1">
+        <motion.div className="nn-title grid grid-rows-1" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.425 }}>
           <h2 className="font-thin text-lg md:text-xl mb-2">My previous experience in the E-commerce industry also allowed me to cultivate my design skills and challenge my creative capabilities by designing impactful promotional landing pages</h2>
-        </div>
-        <div data-aos="fade-in">
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.475 }}>
           <div className="grid grid-flow-col xl:grid-cols-3 grid-rows-2 overflow-x-auto xl:overflow-visible gap-2 md:gap-4 4xl:gap-6 pb-5">
             <div className="w-72 md:w-full">
               <Tilt scale={scale} transitionSpeed={2500}>
@@ -60,7 +61,7 @@ export default function MarketingPages() {
               </Tilt>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

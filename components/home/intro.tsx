@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "@/components/ui/heading";
+import SectionHeading from "@/components/shared/heading";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { motion } from "framer-motion";
-import Background from "../ui/background";
+import Background from "../shared/background";
 
 export default function Intro() {
   const [typewriter] = useTypewriter({

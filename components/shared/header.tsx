@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import ThemeSwitch from "@/components/ui/theme-switch";
+import ThemeSwitch from "@/components/shared/theme-switch";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { headerLinks } from "@/lib/data";
-import Logo from "@/components/ui/logo";
+import Logo from "@/components/shared/logo";
 import { motion } from "framer-motion";
 
 export default function Header() {

@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "@/components/ui/heading";
-import Background from "../ui/background";
+import SectionHeading from "@/components/shared/heading";
+import Background from "../shared/background";
+import { motion } from "framer-motion";
 
 export default function KeySkills() {
   return (
@@ -12,12 +13,12 @@ export default function KeySkills() {
       <div className="container px-8 md:px-16 lg:px-14 xl:px-30 3xl:px-52 4xl:px-72 mb-6">
         <div className="pt-6 py-16 border-b-2 border-white">
           <div className="nn-title grid grid-rows-1 mb-10">
-            <h1 className="sm:text-4xl text-3xl font-medium">
+            <motion.h1 className="sm:text-4xl text-3xl font-medium" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.175 }}>
               <SectionHeading>What I work with on a regular basis:</SectionHeading>
-            </h1>
+            </motion.h1>
           </div>
 
-          <div className="grid grid-flow-col xl:grid-cols-5 grid-rows-1 gap-2 md:gap-4 4xl:gap-6 overflow-x-auto xl:overflow-hidden pb-5 mb-16">
+          <motion.div className="grid grid-flow-col xl:grid-cols-5 grid-rows-1 gap-2 md:gap-4 4xl:gap-6 overflow-x-auto xl:overflow-hidden pb-5 mb-16" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.225 }}>
             <div>
               <div className="group h-40 w-40 xl:h-48 xl:w-48 2xl:w-48 3xl:w-54 4xl:w-64 flex items-center justify-center align-middle bg-white/60 hover:bg-pink-50 dark:hover:bg-white/10 dark:bg-white/5">
                 <div>
@@ -262,16 +263,16 @@ export default function KeySkills() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           <div className="grid grid-rows-1 mb-10">
             <div>
-              <h1 className="sm:text-4xl text-3xl font-medium pb-2 md:pb-5">
+              <motion.h1 className="sm:text-4xl text-3xl font-medium pb-2 md:pb-5" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.275 }}>
                 <SectionHeading>I’ve acquired a few different skills</SectionHeading>
-              </h1>
+              </motion.h1>
             </div>
 
-            <div className="grid grid-rows-1 md:grid-cols-2 gap-x-6 md:gap-x-10 mb-10">
+            <motion.div className="grid grid-rows-1 md:grid-cols-2 gap-x-6 md:gap-x-10 mb-10" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.325 }}>
               <div>
                 <div className="pt-1 group">
                   <div className="flex items-center justify-between">
@@ -410,20 +411,20 @@ export default function KeySkills() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           <div className="grid grid-rows-1">
-            <div data-aos="fade-in" className="mb-3">
+            <motion.div className="mb-3" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.375 }}>
               <h1 className="sm:text-4xl text-3xl font-medium pb-2 md:pb-3">
                 <SectionHeading>
                   I’m also knowledgeable in a number of different tools, <br className="break-web" />
                   frameworks and platforms
                 </SectionHeading>
               </h1>
-            </div>
+            </motion.div>
 
-            <div data-aos="fade-in" className="grid grid-flow-col xl:grid-cols-5 grid-rows-1 lg:grid-rows-2 gap-2 md:gap-4 4xl:gap-6 pb-5 overflow-x-auto xl:overflow-hidden">
+            <motion.div className="grid grid-flow-col xl:grid-cols-5 grid-rows-1 lg:grid-rows-2 gap-2 md:gap-4 4xl:gap-6 pb-5 overflow-x-auto xl:overflow-hidden" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.375 }}>
               <div>
                 <div className="switch h-40 w-40 xl:h-48 xl:w-48 2xl:w-48 3xl:w-54 4xl:w-64 flex items-center justify-center bg-white hover:bg-green-50 dark:hover:bg-white/10 dark:bg-white/5">
                   <div className="grid grid-rows-1">
@@ -684,7 +685,7 @@ export default function KeySkills() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

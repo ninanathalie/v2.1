@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionHeading from "@/components/ui/heading";
+import SectionHeading from "@/components/shared/heading";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 
@@ -25,28 +25,34 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          <h1 className="sm:text-4xl text-3xl font-medium pb-2 md:pb-5">
-            <SectionHeading>About Me</SectionHeading>
-          </h1>
-          <h2 className="font-thin text-justify text-base md:text-lg mb-2">Hello, I'm Nathalie 👋🏼 - A product designer and a front-end developer who's passionate about designing and developing a seamless user experience.</h2>
-          <p className="font-normal text-justify leading-relaxed xl:leading-7 mb-2">
-            I recently transitioned to full-time coding and loving every minute of it! I have experience with Shopify Liquid, Javascript, Bootstrap and Tailwind CSS. I am also currently learning React, Next.js, and TypeScript.
-          </p>
-          <p className="font-normal text-justify leading-relaxed xl:leading-7 mb-2">
-            Previously, I worked as a Product Designer at Edenred for their B2B Payroll Portal, a FinTech company with a presence in 45 countries. I also worked as a Web Designer at BFL Group, mainly responsible for designing and improving the user experience of Brands For Less
-            shoppers. I worked on various projects, from creating experiences for e-marketing opportunities or solving the end-to-end workflow of the Brands for Less' mobile app and many more.
-          </p>
-          <p className="font-normal text-justify leading-relaxed xl:leading-7 mb-2">
-            When I'm not coding, I enjoy reading articles on Medium, writing on my personal blog, or going to the gym. I also love learning new things, although that often means being in front of my computer once again ^.^
-          </p>
+          <div>
+            <motion.h1 className="sm:text-4xl text-3xl font-medium pb-2 md:pb-5" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.175 }}>
+              <SectionHeading>About Me</SectionHeading>
+            </motion.h1>
+            <motion.h2 className="font-thin text-justify text-base md:text-lg mb-2" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.225 }}>
+              Hello, I'm Nathalie 👋🏼 - A product designer and a front-end developer who's passionate about designing and developing a seamless user experience.
+            </motion.h2>
+            <motion.div className="nn-paragraph" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.275 }}>
+              <p className="font-normal text-justify leading-relaxed xl:leading-7 mb-2">
+                I recently transitioned to full-time coding and loving every minute of it! I have experience with Shopify Liquid, Javascript, Bootstrap and Tailwind CSS. I am also currently learning React, Next.js, and TypeScript.
+              </p>
+              <p className="font-normal text-justify leading-relaxed xl:leading-7 mb-2">
+                Previously, I worked as a Product Designer at Edenred for their B2B Payroll Portal, a FinTech company with a presence in 45 countries. I also worked as a Web Designer at BFL Group, mainly responsible for designing and improving the user experience of Brands For
+                Less shoppers. I worked on various projects, from creating experiences for e-marketing opportunities or solving the end-to-end workflow of the Brands for Less' mobile app and many more.
+              </p>
+              <p className="font-normal text-justify leading-relaxed xl:leading-7 mb-2">
+                When I'm not coding, I enjoy reading articles on Medium, writing on my personal blog, or going to the gym. I also love learning new things, although that often means being in front of my computer once again ^.^
+              </p>
+            </motion.div>
+          </div>
         </div>
-        <div style={{ minWidth: "100%", maxWidth: "max-content" }}>
+        <motion.div style={{ minWidth: "100%", maxWidth: "max-content" }} initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.325 }}>
           <Marquee pauseOnHover loop={0} speed={110}>
             <div className="marquee-inner stroke stroke-1 stroke-current font-extrabold text-primary-color dark:text-white">
               <span>6+ YEARS IN THE GAME</span>
             </div>
           </Marquee>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
