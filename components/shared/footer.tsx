@@ -1,13 +1,40 @@
 "use client";
 
-import React from "react";
-import { BiLogoCodepen, BiLogoDribbble, BiLogoGithub, BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
-import SectionHeading from "./heading";
+import React, { FormEvent, ReactNode, useRef, useState } from "react";
+import toast from "react-hot-toast";
 import { motion } from "framer-motion";
-import Background from "./background";
+import { BiLogoCodepen, BiLogoDribbble, BiLogoGithub, BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
+import SectionHeading from "@/components/shared/heading";
+import Background from "@/components/shared/background";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+
+  const [input, setInput] = useState("");
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const email = input;
+    const button = buttonRef.current;
+
+    if (!email || !button) return;
+
+    const res = await fetch("/api/add-subscription", {
+      body: JSON.stringify({ email }),
+      headers: { "Content-Type": "application/json" },
+      method: "POST",
+    });
+    const data = await res.json();
+
+    if (data.error) {
+      toast.error("Hey, you are already subscribed!");
+      return;
+    }
+
+    toast.success(`We've added ${email} to our waitlist. We'll let you know when we launch!`);
+  };
 
   return (
     <footer className="flex justify-center relative">
@@ -26,9 +53,9 @@ export default function Footer() {
               <motion.div className="flex items-center justify-center py-4 sm:py-6" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.325 }}>
                 <div className="w-full lg:w-5/6">
                   <div className="relative text-gray-700">
-                    <form>
-                      <input type="email" defaultValue="" name="EMAIL" className="input-subscribe required email md:h-14 w-full h-13" placeholder="username@email.com" />
-                      <button type="submit" defaultValue="Subscribe" name="subscribe" className="md:h-14 h-13 btn-subscribe">
+                    <form onSubmit={handleSubmit}>
+                      <input value={input} onChange={(e) => setInput(e.target.value)} type="email" className="input-subscribe required email md:h-14 w-full h-13" placeholder="username@email.com" required />
+                      <button ref={buttonRef} disabled={!input} type="submit" defaultValue="Subscribe" name="subscribe" className="md:h-14 h-13 btn-subscribe">
                         Stay Up To Date
                       </button>
                     </form>
