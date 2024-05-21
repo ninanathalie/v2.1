@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
-    "@react-email/components": "^0.0.17",
+    "@react-email/components": "^0.0.18",
     "@types/react-icons": "^3.0.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.4",
