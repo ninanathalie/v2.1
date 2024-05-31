@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import AboutMe from "@/components/about/about";
 import KeySkills from "@/components/about/key-skills";

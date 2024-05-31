@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import DevelopmentProjects from "@/components/projects/development";
 import CaseStudies from "@/components/projects/case-studies";

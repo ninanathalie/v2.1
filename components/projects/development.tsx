@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
+"use client";
 
+import React, { useRef } from "react";
 import SectionHeading from "@/components/shared/heading";
 import { otherProjectsData, projectsData } from "@/lib/data";
 import Image from "next/image";

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import SectionHeading from "@/components/shared/heading";
 import Tilt from "react-parallax-tilt";

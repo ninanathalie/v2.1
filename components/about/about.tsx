@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import SectionHeading from "@/components/shared/heading";
 import { motion } from "framer-motion";
