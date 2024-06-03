@@ -13,7 +13,7 @@
     "@react-email/components": "^0.0.19",
     "@types/react-icons": "^3.0.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.2.9",
+    "framer-motion": "^11.2.10",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
