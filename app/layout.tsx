@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/styles/globals.css";
 import Header from "@/components/shared/header";
 import ThemeContextProvider from "@/context/theme-context";
 import { fontNexa } from "@/lib/local-font";
-import { motion } from "framer-motion";
 import Background from "@/components/shared/background";
 import Footer from "@/components/shared/footer";
 import { Toaster } from "react-hot-toast";
