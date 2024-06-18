@@ -27,7 +27,7 @@ export default function Intro() {
 
               <motion.p className="text-justify md:text-left leading-relaxed xl:leading-7" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
                 As a designer with over 6+ years of experience, I wear many hats. <br className="break-web" />
-                However, front-end design and development piqued my interest.{" "}
+                However, UI design and development piqued my interest.{" "}
                 <span>
                   Building a seamless experience for the user and much more is like <span className="text-[#9DA0F4] font-semibold dark:border-white">{typewriter}</span> <Cursor />
                 </span>
