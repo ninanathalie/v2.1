@@ -47,7 +47,7 @@ export default function Header() {
               </motion.a>
               <div className="flex flex-col md:inline-flex md:flex-row items-center uppercase md:gap-12 text-xl md:text-xs">
                 {headerLinks.slice(3).map((headerLinks, index) => (
-                  <a key={index} href={headerLinks.href} className="min-w-full md:min-w-0 text-center md:inline-flex md:w-auto hover:text-secondary-color ">
+                  <a key={index} href={headerLinks.href} target="_blank" className="min-w-full md:min-w-0 text-center md:inline-flex md:w-auto hover:text-secondary-color ">
                     <span className="block align-middle font-semibold md:font-normal py-4 md:py-2">{headerLinks.text}</span>
                   </a>
                 ))}

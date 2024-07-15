@@ -99,7 +99,7 @@ export default function EdenredDesignSystem() {
       </div>
 
       <div id="goals">
-        <div className="px-0 mx-0 bg-white dark:bg-primary-color">
+        <div className="px-0 mx-0 bg-white dark:bg-white/5">
           <div className="container px-8 md:px-16 lg:px-14 xl:px-16 2xl:px-32 3xl:px-52 4xl:px-72">
             <div className="py-10 sm:py-16">
               <div className="grid grid-rows-1 xl:mx-14 3xl:mx-20">
@@ -151,7 +151,7 @@ export default function EdenredDesignSystem() {
       </div>
 
       <div>
-        <div className="px-0 mx-0 bg-[#F6F8FF] dark:bg-primary-color">
+        <div className="px-0 mx-0 bg-[#F6F8FF] dark:bg-white/5">
           <div className="container px-8 md:px-16 lg:px-14 xl:px-16 3xl:px-52 4xl:px-72">
             <div className="py-10 sm:py-16">
               <div className="grid grid-rows-1 xl:mx-14 3xl:mx-20">
@@ -254,7 +254,7 @@ export default function EdenredDesignSystem() {
               through design tokens
             </div>
 
-            <div className="grid grid-rows-1 bg-white dark:bg-primary-color">
+            <div className="grid grid-rows-1 bg-white dark:bg-white/5">
               <div className="py-6 md:py-10 mx-6 xl:mx-14 3xl:mx-20">
                 <p className="leading-relaxed xl:leading-7 italic text-justify">I have omitted confidential information in this case study. The information presented here is my own and does not necessarily reflect the views of the company.</p>
               </div>

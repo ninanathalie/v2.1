@@ -1,5 +1,6 @@
 "use client";
 
+import { caseStudiesData } from "@/lib/data";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -14,81 +15,30 @@ export default function CaseStudies() {
         </div>
         <motion.div className="pb-10 sm:pb-8" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.425 }}>
           <div className="grid lg:grid-cols-2 grid-rows-1 gap-4 xl:gap-6">
-            <div>
-              <a href="/projects/case-studies/edenred-design-system/" className=" dark:text-slate-950 dark:hover:text-white">
-                <div className="case-img">
-                  <picture>
-                    <source media="(min-width: 900px)" srcSet="/projects/design-system.jpg" />
-                    <source media="(min-width: 0)" srcSet="/projects/mob/design-system.jpg" />
-                    <img width="2560" height="716" src="/projects/design-system.jpg" />
-                  </picture>
-
-                  <div className="top-left">
-                    <p className="font-bold mb-1">Edenred Payroll+ Design System</p>
-                    <p className="text-xs">
-                      UI DESIGN <span className="px-3">|</span> DESIGN SYSTEM
-                    </p>
+            {caseStudiesData.map(({ href, imgSrc, title, description }, index) => (
+              <div key={index}>
+                <a href={href} className="dark:text-slate-950 dark:hover:text-white">
+                  <div className="case-img">
+                    <picture>
+                      <source media="(min-width: 900px)" srcSet={imgSrc.desktop} />
+                      <source media="(min-width: 0)" srcSet={imgSrc.mobile} />
+                      <img width="2560" height="716" src={imgSrc.desktop} alt={title} />
+                    </picture>
+                    <div className="top-left">
+                      <p className="font-bold mb-1">{title}</p>
+                      <p className="text-xs">
+                        {description.map((desc, i) => (
+                          <span key={i}>
+                            {desc}
+                            {i < description.length - 1 && <span className="px-3">|</span>}
+                          </span>
+                        ))}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-
-            <div>
-              <a href="/projects/case-studies/visual-search/" className=" dark:text-slate-950 dark:hover:text-white">
-                <div className="case-img">
-                  <picture>
-                    <source media="(min-width: 900px)" srcSet="/projects/visual-search.jpg" />
-                    <source media="(min-width: 0)" srcSet="/projects/mob/visual-search.jpg" />
-                    <img width="2560" height="716" src="/projects/visual-search.jpg" />
-                  </picture>
-
-                  <div className="top-left">
-                    <p className="font-bold mb-1">BFL + Syte’s Visual Search & Product Discovery</p>
-                    <p className="text-xs">
-                      UX DESIGN <span className="px-3">|</span> RESEARCH <span className="px-3">|</span> PROTOTYPING
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div>
-              <a href="/projects/case-studies/easy-filter/" className=" dark:text-slate-950 dark:hover:text-white">
-                <div className="case-img">
-                  <picture>
-                    <source media="(min-width: 900px)" srcSet="/projects/quick-filter.jpg" />
-                    <source media="(min-width: 0)" srcSet="/projects/mob/quick-filter.jpg" />
-                    <img width="2560" height="716" src="/projects/quick-filter.jpg" />
-                  </picture>
-
-                  <div className="top-left">
-                    <p className="font-bold mb-1">Quick & Easy Filter for Shoppers</p>
-                    <p className="text-xs">
-                      UX DESIGN <span className="px-3">|</span> RESEARCH <span className="px-3">|</span> PROTOTYPING
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div>
-              <a href="/projects/case-studies/checkout-redesign/" target="_blank" className=" dark:text-slate-950 dark:hover:text-white">
-                <div className="case-img">
-                  <picture>
-                    <source media="(min-width: 900px)" srcSet="/projects/checkout-process.jpg" />
-                    <source media="(min-width: 0)" srcSet="/projects/mob/checkout-process.jpg" />
-                    <img width="2560" height="716" src="/projects/checkout-process.jpg" />
-                  </picture>
-
-                  <div className="top-left">
-                    <p className="font-bold mb-1">Checkout Process Redesign & Optimization</p>
-                    <p className="text-xs">
-                      UX DESIGN <span className="px-3">|</span> RESEARCH <span className="px-3">|</span> PROTOTYPING
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
+                </a>
+              </div>
+            ))}
           </div>
         </motion.div>
       </div>

@@ -55,3 +55,42 @@ export const projectsData = [
 ] as const;
 
 export const otherProjectsData = ["www.spikespree.com", "www.gleechoices.com", "www.dailysnags.com", "www.saywegood.com", "www.pnosailingacademy.com", "www.transgulf.ae"];
+
+export const caseStudiesData = [
+  {
+    href: "/projects/case-studies/edenred-design-system/",
+    imgSrc: {
+      desktop: "/projects/design-system.jpg",
+      mobile: "/projects/mob/design-system.jpg",
+    },
+    title: "Edenred Payroll+ Design System",
+    description: ["UI DESIGN", "DESIGN SYSTEM"],
+  },
+  {
+    href: "/projects/case-studies/visual-search/",
+    imgSrc: {
+      desktop: "/projects/visual-search.jpg",
+      mobile: "/projects/mob/visual-search.jpg",
+    },
+    title: "BFL + Syte’s Visual Search & Product Discovery",
+    description: ["UX DESIGN", "RESEARCH", "PROTOTYPING"],
+  },
+  {
+    href: "/projects/case-studies/easy-filter/",
+    imgSrc: {
+      desktop: "/projects/quick-filter.jpg",
+      mobile: "/projects/mob/quick-filter.jpg",
+    },
+    title: "Quick & Easy Filter for Shoppers",
+    description: ["UX DESIGN", "RESEARCH", "PROTOTYPING"],
+  },
+  {
+    href: "/projects/case-studies/checkout-redesign/",
+    imgSrc: {
+      desktop: "/projects/checkout-process.jpg",
+      mobile: "/projects/mob/checkout-process.jpg",
+    },
+    title: "Checkout Process Redesign & Optimization",
+    description: ["UX DESIGN", "RESEARCH", "PROTOTYPING"],
+  },
+];

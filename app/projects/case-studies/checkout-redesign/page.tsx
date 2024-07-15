@@ -150,7 +150,7 @@ export default function VisualSearch() {
         </div>
 
         <div id="competitive-studies">
-          <div className="px-0 mx-0 bg-[#FCFFEF] dark:bg-primary-color">
+          <div className="px-0 mx-0 bg-[#FCFFEF] dark:bg-white/5">
             <div className="container px-8 md:px-16 lg:px-14 xl:px-30 2xl:px-32 3xl:px-52 4xl:px-72">
               <div className="py-6 sm:py-12 mb-6 md:mb-10">
                 <div className="mb-3 md:mb-6">
