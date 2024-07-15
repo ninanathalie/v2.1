@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { showcaseItems } from "@/lib/data";
-import SectionHeading from "../shared/heading";
+import SectionHeading from "@/components/shared/heading";
 import { motion } from "framer-motion";
 
 type ShowcaseProps = (typeof showcaseItems)[number];

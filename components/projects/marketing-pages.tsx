@@ -33,7 +33,7 @@ export default function MarketingPages() {
 
             <div className="w-72 md:w-full">
               <Tilt scale={scale} transitionSpeed={2500}>
-                <a href="/mumuso/" target="_blank">
+                <a href="https://bfl-group.vercel.app/catalogue/mumuso" target="_blank">
                   <img src="/projects/mumuso.jpg" alt="" className="w-full" />
                 </a>
               </Tilt>
@@ -57,7 +57,7 @@ export default function MarketingPages() {
 
             <div className="w-72 md:w-full">
               <Tilt scale={scale} transitionSpeed={2500}>
-                <a href="/gift-guide-2020/" target="_blank">
+                <a href="https://bfl-group.vercel.app/campaigns/gift-guide-2020/" target="_blank">
                   <img src="/projects/gift-guide.jpg" alt="" className="w-full" />
                 </a>
               </Tilt>
