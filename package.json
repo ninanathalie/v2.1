@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@types/mailchimp__mailchimp_marketing": "^3.0.20",
-    "@types/node": "^20",
+    "@types/node": "^20.14.10",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "encoding": "^0.1.13",
