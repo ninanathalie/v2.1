@@ -20,7 +20,7 @@ export default function Intro() {
             <div className="md:col-span-2">
               <motion.div className="featured-text relative sm:text-4xl text-3xl font-bold pb-2 md:pb-5" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
                 <SectionHeading>Hello, I'm Nina Nathalie 👋🏼 </SectionHeading> <br className="break-web" />
-                <SectionHeading>I’m a Digital Product Designer</SectionHeading> <br className="break-web" />
+                <SectionHeading>I’m a Digital (UX/UI) Product Designer</SectionHeading> <br className="break-web" />
                 <SectionHeading>and a Front-end Developer</SectionHeading>
               </motion.div>
 

@@ -100,7 +100,7 @@ export default function Footer() {
                   | All Rights Reserved &copy; {currentYear}
                 </small>{" "}
                 <br />
-                <small className="text-xs text-slate-500 dark:text-slate-400">Crafted with React & Next.js (App Router & Server Actions), Typescript, Tailwind CSS, Framer Motion, React Email, Resend API, and Vercel Hosting</small>
+                <small className="text-xs text-slate-500 dark:text-slate-400">Crafted with React & Next.js, Typescript, Tailwind CSS, Framer Motion, React Email, Resend API, and Vercel Hosting</small>
               </motion.div>
             </div>
           </div>
