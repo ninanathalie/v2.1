@@ -24,7 +24,7 @@ export const showcaseItems = [
   {
     title: "Developing the Edenred Payroll+ Design System",
     sub: "A design system for a Fintech",
-    description: "Brands For Less sought to deliver a next-generation search and discovery experience with bespoke solutions.",
+    description: "With the continuous growth of the Edenred Payroll portal, the product accumulated a great deal of design debt. Therefore, we decided to recreate the Edenred Payroll+ Design System.",
     tags: ["UI DESIGN", "DESIGN SYSTEMS"],
     imageUrl: csDesignSystem,
     link: "/projects/case-studies/edenred-design-system/",
