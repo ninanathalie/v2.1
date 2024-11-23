@@ -8,7 +8,7 @@ export const headerLinks = [
   { text: "Home", href: "/" },
   { text: "About Me", href: "/about/" },
   { text: "Works", href: "/projects/" },
-  { text: "Resume", href: "/shared/docs/nina-nathalie-resume.pdf", target: "_blank" },
+  { text: "Linkedin", href: "https://www.linkedin.com/in/ninanathalie/", target: "_blank" },
   { text: "Contact", href: "/contact/" },
 ];
 
