@@ -11,7 +11,7 @@ export default function KeySkills() {
       <Background showBlobXY={true} />
 
       <div className="container px-8 md:px-16 lg:px-14 xl:px-30 3xl:px-52 4xl:px-72 mb-6">
-        <div className="pt-6 py-16 border-b-2 border-white">
+        <div className="pt-6 py-16">
           <div className="nn-title grid grid-rows-1 mb-10">
             <motion.h1 className="sm:text-4xl text-3xl font-medium" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.175 }}>
               <SectionHeading>What I work with on a regular basis:</SectionHeading>
