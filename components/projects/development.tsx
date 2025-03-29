@@ -2,10 +2,8 @@
 
 import React, { useRef } from "react";
 import SectionHeading from "@/components/shared/heading";
-import { otherProjectsData, projectsData } from "@/lib/data";
+import { projectsData } from "@/lib/data";
 import Image from "next/image";
-import { RiArrowRightUpLine } from "react-icons/ri";
-import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
@@ -35,14 +33,6 @@ export default function DevelopmentProjects() {
             </motion.div>
           </div>
 
-          <div className="nn-title grid grid-rows-1 mb-4">
-            <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.225 }}>
-              <h2 className="font-thin text-lg md:text-xl mb-2">
-                I devise design solutions, maintain Shopify and Wordpress websites, and contribute to improving our internal Shopify theme and Web Apps, with all collaborative efforts with my two <span>masters</span>. 🐣
-              </h2>
-            </motion.div>
-          </div>
-
           <div className="md:gap-4 4xl:gap-6 pb-5">
             <div className="grid grid-cols-1 grid-rows-2 xl:grid-cols-2 xl:grid-rows-1 gap-6">
               {projectsData.map((project, index) => (
@@ -53,25 +43,6 @@ export default function DevelopmentProjects() {
                 </React.Fragment>
               ))}
             </div>
-          </div>
-
-          <div className="nn-title grid grid-rows-1 mb-4 overflow-hidden">
-            <motion.div initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.275 }}>
-              <p className="font-thin text-md md:text-lg mb-2 text-slate-500">Here's a selection of front-end projects that I've also worked on in the past:</p>
-            </motion.div>
-            <motion.div className="marquee-projects gap-2" style={{ minWidth: "100%", maxWidth: "max-content" }} initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.325 }}>
-              <Marquee pauseOnHover loop={0} speed={60}>
-                <ul className="flex gap-2 text-md text-slate-600">
-                  {otherProjectsData.map((links, index) => (
-                    <li className="bg-white rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 dark:border dark:border-black/[0.1] " key={index}>
-                      <a className="group transition flex items-center font-bold underline underline-offset-4 hover:no-underline">
-                        {links} <RiArrowRightUpLine className="opactity-70 group-hover:translate-x-1 transition" />
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </Marquee>
-            </motion.div>
           </div>
         </div>
       </div>

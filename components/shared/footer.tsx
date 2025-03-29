@@ -64,7 +64,7 @@ export default function Footer() {
               </motion.div>
               <motion.div className="flex nn-container justify-between items-center" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.385 }}>
                 <ul className="nn-icons pb-16 flex flex-1 justify-center items-center gap-2 md:gap-4 uppercase text-xs">
-                  <a href="https://dribbble.com/pseudonath/" target="_blank" className="">
+                  <a href="https://dribbble.com/thatgirlnathalie/" target="_blank" className="">
                     <li className="footer-social text-lg">
                       <BiLogoDribbble />
                     </li>
@@ -79,12 +79,12 @@ export default function Footer() {
                       <BiLogoInstagram />
                     </li>
                   </a>
-                  <a href="https://github.com/pseudonath/" target="_blank" className="">
+                  <a href="https://github.com/ninanathalie/" target="_blank" className="">
                     <li className="footer-social text-lg">
                       <BiLogoGithub />
                     </li>
                   </a>
-                  <a href="https://codepen.io/pseudonath/pens/public" target="_blank" className="">
+                  <a href="https://codepen.io/thatgirlnathalie/pens/public" target="_blank" className="">
                     <li className="footer-social text-lg">
                       <BiLogoCodepen />
                     </li>
