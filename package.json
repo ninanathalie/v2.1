@@ -24,7 +24,7 @@
     "react-intersection-observer": "^9.16.0",
     "react-parallax-tilt": "^1.7.287",
     "react-simple-typewriter": "^5.0.1",
-    "resend": "^3.3.0"
+    "resend": "^4.2.0"
   },
   "devDependencies": {
     "@types/mailchimp__mailchimp_marketing": "^3.0.21",
