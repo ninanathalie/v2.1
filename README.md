@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/ninanathalie/v1/main/public/shared/logo/nn-logo.svg" width="60" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/ninanathalie/v1/master/public/shared/logo/nn-logo.svg" width="60" />
 </div>
 
 <h1 align="center">
@@ -16,7 +16,7 @@
   <a href="https://github.com/ninanathalie/v2" target="_blank">v2</a> <strong>[In Progress]</strong>
 </p>
 
-![Demo](https://raw.githubusercontent.com/ninanathalie/v1/main/public/shared/images/preview.png)
+![Demo](https://raw.githubusercontent.com/ninanathalie/v1/master/public/shared/images/preview.png)
 
 ## 🚨 TL;DR
 
