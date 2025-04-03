@@ -17,7 +17,7 @@
     "next": "15.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-email": "^3.0.7",
+    "react-email": "^4.0.3",
     "react-fast-marquee": "^1.6.5",
     "react-hot-toast": "^2.5.2",
     "react-hotjar": "^6.3.1",
